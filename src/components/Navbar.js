@@ -16,7 +16,14 @@ const Navbar = () => {
 
           <div className="nav-links">
             {['About Us', 'Services', 'Portfolio', 'Contact', 'Careers'].map((item) => (
-              <a key={item} href="#">{item}</a>
+              <a 
+                key={item} 
+                href="https://www.google.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                {item}
+              </a>
             ))}
           </div>
 
@@ -88,7 +95,6 @@ const Navbar = () => {
           padding: 0 25px;
         }
 
-        /* 🔥 LOGO WITH IMAGE */
         .logo {
           display: flex;
           align-items: center;
@@ -99,15 +105,13 @@ const Navbar = () => {
           white-space: nowrap;
         }
 
-       .logo img {
-  height: 34px;
-  width: auto;
-  object-fit: contain;
-
-  /* 🔥 make logo light black / muted */
-  filter: brightness(0) invert(0.2);
-  opacity: 0.85;
-}
+        .logo img {
+          height: 34px;
+          width: auto;
+          object-fit: contain;
+          filter: brightness(0) invert(0.2);
+          opacity: 0.85;
+        }
 
         .nav-links {
           display: flex;
